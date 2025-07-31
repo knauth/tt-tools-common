@@ -27,7 +27,7 @@ jobs:
     - name: Install build dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y git build-essential debhelper dh-python python3-setuptools python3-wheel python3-pip pybuild-plugin-pyproject python3-all libpython3-all-dev
+        sudo apt-get install -y git build-essential debhelper dh-python python3-setuptools python3-wheel python3-pip pybuild-plugin-pyproject python3-all libpython3-all-dev python3-venv
         python -m pip install build
 
     - name: Build Python wheel
