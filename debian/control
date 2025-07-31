@@ -10,5 +10,5 @@ Vcs-Browser: https://github.com/tenstorrent/tt-tools-common
 
 Package: tt-tools-common
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}, python3-distro, python3-elasticsearch, python3-pydantic, python3-rich, python3-textual, python3-importlib-resources, python3-setuptools
+Depends: ${python3:Depends}, ${misc:Depends}, python3-distro, python3-elasticsearch, python3-pydantic, python3-rich, python3-textual, python3-importlib-resources, python3-setuptools, python3-pydantic, python3-psutil, python3-pyyaml, python3-requests, python3-tqdm
 Description: This is a space for common utilities shared across Tentorrent tools. This is a helper library and not a standalone tool.
