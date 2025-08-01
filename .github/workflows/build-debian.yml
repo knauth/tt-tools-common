@@ -25,10 +25,15 @@ jobs:
         fetch-tags: true
         fetch-depth: 0
 
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
     - name: Install build dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y git build-essential debhelper dh-python python3-setuptools python3-wheel python3-pip python3-all libpython3-all-dev python3-venv
+        sudo apt-get install -y git build-essential debhelper dh-python python3-setuptools python3-wheel python3-pip
         sudo apt-get build-dep . -y
         python -m pip install -U build pip
 
